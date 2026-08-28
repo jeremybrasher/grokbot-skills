@@ -36,3 +36,5 @@ Only skills that clear AXIØM alignment at 90, with no HOLD and no veto. Raw har
 - `skills/humanizer-ru` — 92.8 (2026-08-28)
 
 - `skills/systematic-debugging` — 93.6 (2026-08-28)
+
+- `skills/task-observer` — 92.8 (2026-08-28)

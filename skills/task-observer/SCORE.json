@@ -1,0 +1,62 @@
+{
+  "slug": "task-observer",
+  "attempt": 2,
+  "scores": {
+    "OFI": 10,
+    "HD": 10,
+    "DBC": 9,
+    "NRC": 9,
+    "RWR": 9,
+    "MT": 8,
+    "OEA": 9
+  },
+  "weighted": {
+    "OFI": 20.0,
+    "HD": 18.0,
+    "DBC": 14.4,
+    "NRC": 13.5,
+    "RWR": 11.7,
+    "MT": 8.0,
+    "OEA": 7.2
+  },
+  "holds": [],
+  "veto": null,
+  "composite": 92.8,
+  "decision": "admit",
+  "rationale": "OFI and HD at ceiling: three-item intake (stable workspace, work session or watch request, a way to record) and a thirteen-row HOLD table that returns a named non-entry. DBC 9: cut-first defaults, adopt-don't-fork, candidate-lock on single observations, simplify-over-add; simplify-as-review-default is still a heuristic. NRC 9: refuse list plus pre-return checklist; the checklist is declarative, not a runnable fail state. RWR 9: locked eleven-step method card plus cadence and date tables so a later agent gets the same file family without rotting logs or invented dates; 7-day review trigger remains a calendar heuristic and references/ still exist as optional extras. MT 8: card is portable but sibling/family judgment and staged-update path still have carry cost. OEA 9: eleven recipe-caused distortions named (frontmatter-as-object, same-turn interrupt, log-and-defer leaving defects live, 7-day batch rot, single-observation pressure, family over-apply, deliverable self-assessment, attention warp, backfill-as-past, invented-date false history, observer-as-skill overfit) and residual human checks named. Composite 92.8, no HOLD, no veto \u2014 admit on the instrument. PRIME stopgate: not copied into skills/, not committed, not pushed.",
+  "axiom_message_ids": [
+    "msg_0cb927403e814fd6940e487b"
+  ],
+  "prior": {
+    "attempt": 1,
+    "scores": {
+      "OFI": 9,
+      "HD": 9,
+      "DBC": 8,
+      "NRC": 9,
+      "RWR": 7,
+      "MT": 8,
+      "OEA": 7
+    },
+    "weighted": {
+      "OFI": 18.0,
+      "HD": 16.2,
+      "DBC": 12.8,
+      "NRC": 13.5,
+      "RWR": 9.1,
+      "MT": 8.0,
+      "OEA": 5.6
+    },
+    "composite": 83.2,
+    "decision": "upgrade",
+    "axiom_message_ids": [
+      "msg_7a1be298f14147f5adc1ea96"
+    ],
+    "govern_run_id": "run_97fb51ea8e6e46519e2d5086"
+  },
+  "stopgate": "PRIME",
+  "stopgate_notes": "Kernel names locked. grounding_governor repaired (low_keyword_coverage). tailing_linter warned. Scored from upgraded SKILL.md operational excerpt (attempt 2). Composite 92.8 clears 90 with no HOLD and no veto so decision is admit. PRIME stopgate: no copy into skills/, no commit, no push.",
+  "instrument": "SCORING.md / axi-m-skill-alignment",
+  "date": "2026-08-28",
+  "govern_run_id": "run_56ecf041d4e44239b8142aad"
+}
