@@ -1,0 +1,4 @@
+incoming/
+_harvest.py
+*.pyc
+.DS_Store

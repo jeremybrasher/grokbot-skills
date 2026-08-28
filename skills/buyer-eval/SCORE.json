@@ -1,0 +1,62 @@
+{
+  "slug": "buyer-eval",
+  "attempt": 2,
+  "scores": {
+    "OFI": 10,
+    "HD": 10,
+    "DBC": 9,
+    "NRC": 9,
+    "RWR": 9,
+    "MT": 8,
+    "OEA": 9
+  },
+  "weighted": {
+    "OFI": 20.0,
+    "HD": 18.0,
+    "DBC": 14.4,
+    "NRC": 13.5,
+    "RWR": 11.7,
+    "MT": 8.0,
+    "OEA": 7.2
+  },
+  "holds": [],
+  "veto": null,
+  "composite": 92.8,
+  "decision": "admit",
+  "rationale": "OFI and HD are fully evidenced: named missing inputs (company, vendors, why-now, boundary, EVALUATION.md) each return the gap instead of a scorecard. DBC refuses added vendors, dimensions, artifacts, and invented scores, with [GAP] as the substitute; the inherited pricing-estimate carve-out is the only expansion path. NRC names a refuse list and a pre-return output test. RWR is the locked nine-step method card plus snapshot reuse. OEA names six process-caused distortions (why-now as weighting frame, vendor self-positioning, Company Agent as vendor speech, calibration bias, manufactured pricing, asymmetric ranking) and what still needs a human. MT is 8: the method is step-indexed but still points into EVALUATION.md \u00a78.3. Composite 92.8, no HOLD, no veto \u2014 admit on the instrument. PRIME stopgate: not copied into skills/, not committed, not pushed.",
+  "axiom_message_ids": [
+    "msg_c8ad8c34cd584b6fb7176f7b"
+  ],
+  "prior": {
+    "attempt": 1,
+    "scores": {
+      "OFI": 9,
+      "HD": 9,
+      "DBC": 8,
+      "NRC": 8,
+      "RWR": 7,
+      "MT": 7,
+      "OEA": 7
+    },
+    "weighted": {
+      "OFI": 18.0,
+      "HD": 16.2,
+      "DBC": 12.8,
+      "NRC": 12.0,
+      "RWR": 9.1,
+      "MT": 7.0,
+      "OEA": 5.6
+    },
+    "composite": 80.7,
+    "decision": "upgrade",
+    "axiom_message_ids": [
+      "msg_9aac0aca10ee4a79ace9c0ee"
+    ],
+    "govern_run_id": "run_4b4c6a3d026d4e05b8e080b0"
+  },
+  "stopgate": "PRIME",
+  "stopgate_notes": "Kernel names locked. Scored from upgraded SKILL.md plus runtime EVALUATION.md excerpt. Composite 92.8 clears 90 with no HOLD and no veto so decision is admit. PRIME stopgate: no copy into skills/, no commit, no push.",
+  "instrument": "SCORING.md / axi-m-skill-alignment",
+  "date": "2026-08-28",
+  "govern_run_id": "run_11b0edd0117e4f7489bbfd88"
+}
