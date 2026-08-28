@@ -1,0 +1,62 @@
+{
+  "slug": "systematic-debugging",
+  "attempt": 2,
+  "scores": {
+    "OFI": 10,
+    "HD": 10,
+    "DBC": 9,
+    "NRC": 9,
+    "RWR": 9,
+    "MT": 8,
+    "OEA": 10
+  },
+  "weighted": {
+    "OFI": 20.0,
+    "HD": 18.0,
+    "DBC": 14.4,
+    "NRC": 13.5,
+    "RWR": 11.7,
+    "MT": 8.0,
+    "OEA": 8.0
+  },
+  "holds": [],
+  "veto": null,
+  "composite": 93.6,
+  "decision": "admit",
+  "rationale": "OFI and HD at ceiling: three-item intake (named failure, observable system, a way to gather evidence) and a ten-row HOLD table that returns a named non-fix. DBC 9: cut-first defaults, revert failed-hypothesis code, delete the bad path; four-phase ceremony still adds steps after a cause is already named. NRC 9: refuse list plus pre-return checklist; the checklist is declarative, not a runnable fail state. RWR 9: locked six-step method card runs from this file if companions are missing. MT 8: phases and hypothesis-revert are portable, but pattern-comparison and the architecture gate still assume unscaffolded judgment. OEA 10: seven recipe-caused distortions named (first-test-as-object, architecture-gate delay, smallest-change hiding a bad root, instrumentation changing the system, working-example pull, Phase 1 ceremony delay, companion-file pull) and residual human checks named. Composite 93.6, no HOLD, no veto \u2014 admit on the instrument. PRIME stopgate: not copied into skills/, not committed, not pushed.",
+  "axiom_message_ids": [
+    "msg_9e1b344654d045a88f7e51f8"
+  ],
+  "prior": {
+    "attempt": 1,
+    "scores": {
+      "OFI": 9,
+      "HD": 9,
+      "DBC": 8,
+      "NRC": 8,
+      "RWR": 8,
+      "MT": 9,
+      "OEA": 3
+    },
+    "weighted": {
+      "OFI": 18.0,
+      "HD": 16.2,
+      "DBC": 12.8,
+      "NRC": 12.0,
+      "RWR": 10.4,
+      "MT": 9.0,
+      "OEA": 2.4
+    },
+    "composite": 80.8,
+    "decision": "upgrade",
+    "axiom_message_ids": [
+      "msg_c4dec0d9d43a43e1ab62781a"
+    ],
+    "govern_run_id": "run_b160674ed5754ecc8d74304b"
+  },
+  "stopgate": "PRIME",
+  "stopgate_notes": "Kernel names locked. grounding_governor repaired (low_keyword_coverage). Scored from upgraded SKILL.md operational excerpt (attempt 2). Composite 93.6 clears 90 with no HOLD and no veto so decision is admit. PRIME stopgate: no copy into skills/, no commit, no push.",
+  "instrument": "SCORING.md / axi-m-skill-alignment",
+  "date": "2026-08-28",
+  "govern_run_id": "run_4d37866c8dcc4a4a8a59c213"
+}
