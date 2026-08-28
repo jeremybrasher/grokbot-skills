@@ -46,3 +46,5 @@ Only skills that clear AXIØM alignment at 90, with no HOLD and no veto. Raw har
 - `skills/avoid-ai-writing` — 94.6 (2026-08-28)
 
 - `collections/great-cto` — 93.0 (2026-08-28)
+
+- `collections/notfair` — 95.3 (2026-08-28)

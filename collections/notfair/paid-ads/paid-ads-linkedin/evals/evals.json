@@ -1,0 +1,31 @@
+{
+  "skill_name": "paid-ads-linkedin",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Audit my connected LinkedIn Ads account. CPL is down, but sales says lead quality is worse. Compare campaign groups and campaigns and recommend what to do.",
+      "expected_output": "A connector-backed B2B audit that keeps platform leads separate from qualified pipeline outcomes and uses one broad read before recommending a bounded action.",
+      "files": [],
+      "expectations": [
+        "Confirms the LinkedIn connector and selected account",
+        "Uses a correlated read across campaign groups, campaigns, and analytics",
+        "Separates lead quantity, qualified leads, and downstream pipeline",
+        "States currency, attribution basis, and complete comparison windows",
+        "Does not mutate the account during the audit"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Replace the targeting on our LinkedIn campaign with CTOs at US SaaS companies and activate it.",
+      "expected_output": "A safe targeting workflow that reads the existing whole targeting tree, resolves names to LinkedIn URNs, previews the full replacement, and obtains approval before activation.",
+      "files": [],
+      "expectations": [
+        "Reads and preserves visibility into the existing targeting tree",
+        "Resolves targeting entities to LinkedIn URNs rather than guessing IDs",
+        "Shows the complete before and proposed targeting trees",
+        "Uses dry-run when available and asks for exact approval",
+        "Verifies the result before calling it published"
+      ]
+    }
+  ]
+}

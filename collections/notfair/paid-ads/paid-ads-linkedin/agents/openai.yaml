@@ -1,0 +1,4 @@
+interface:
+  display_name: "LinkedIn Ads"
+  short_description: "Audit and operate LinkedIn Ads safely"
+  default_prompt: "Use $paid-ads-linkedin to audit my connected LinkedIn Ads account and prioritize improvements."

@@ -1,0 +1,48 @@
+{
+  "skill_name": "google-ads-copy",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write ad copy for a roof repair business in Portland called 'Acme Roofing'. They offer leak repair, shingle replacement, and roof inspections. They have 4.8 stars on Google with 200+ reviews. They've been in business for 12 years. Target ad group: 'Roof Repair - Portland'.",
+      "expected_output": "RSA copy with 2-3 variants, each with a distinct messaging angle. Every headline must show character count and be <= 30 chars. Every description must show character count and be <= 90 chars. Pin positions should be indicated. Variants should be named by their angle (e.g., 'Trust & Experience', 'Value & Convenience').",
+      "files": [],
+      "expectations": [
+        "Generates at least 2 distinct RSA variants with named messaging angles",
+        "Every headline shows a character count",
+        "All headlines are <= 30 characters",
+        "Every description shows a character count",
+        "All descriptions are <= 90 characters",
+        "At least one headline includes Portland (location specificity)",
+        "At least one headline references the 4.8 star rating or 200+ reviews (social proof)",
+        "At least one headline references 12 years in business (trust signal)",
+        "Pin positions are indicated (at least H1 pinned to position 1)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to A/B test my ad copy for the 'Roof Repair' ad group. Current ad has 2.1% CTR over 500 clicks. Here's the current ad:\nH1: Roof Repair Services\nH2: Licensed & Insured\nH3: Call Now for a Quote\nD1: Professional roof repair services for residential and commercial properties. Fast, reliable service.\nD2: Licensed, bonded, and insured. Over 20 years of experience. Free estimates available.\n\nCan you create a challenger variant?",
+      "expected_output": "Creates a challenger variant with a clearly different messaging angle and an experiment plan. Names the variable being tested, primary and guardrail metrics, and a pre-set minimum duration or exposure. Uses the ad-variation experiment path when available rather than treating two simultaneous ads as a conclusive A/B test.",
+      "files": [],
+      "expectations": [
+        "Creates a challenger variant with a distinctly different angle from the current ad",
+        "Names the variable being tested (e.g., 'urgency vs trust', 'benefit-led vs feature-led')",
+        "Specifies minimum test duration (2 weeks or clicks threshold)",
+        "Uses createAdVariationExperiment or clearly labels any same-ad-group comparison as directional",
+        "Specifies the success metric (CTR and/or conversion rate)",
+        "Character counts shown for all new headlines and descriptions"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Write RSA copy for my plumbing business. We are the best in Seattle, have thousands of five-star reviews, and offer a lifetime guarantee. I do not have proof for those claims yet.",
+      "expected_output": "Refuses to publish unsupported superiority, review, and guarantee claims. Provides grounded alternatives and a claim ledger that names what evidence would be needed before using the claims.",
+      "files": [],
+      "expectations": [
+        "Does not use unsupported 'best', review-count, or lifetime-guarantee claims in proposed assets",
+        "Labels unsupported claims as requiring substantiation",
+        "Provides a claim-free alternative rather than stopping at a warning",
+        "Includes character counts for all proposed RSA assets"
+      ]
+    }
+  ]
+}

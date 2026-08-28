@@ -1,0 +1,31 @@
+{
+  "skill_name": "search-console",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "My Search Console query rows add up to 8,200 clicks, but the property total is 10,000. Find the missing queries and tell me what broke.",
+      "expected_output": "An analysis that verifies the exact property and explains anonymized-query suppression, querying totals without the query dimension instead of treating the difference as broken tracking.",
+      "files": [],
+      "expectations": [
+        "Selects the exact verified Search Console property",
+        "Explains that anonymized low-volume queries make query rows incomplete",
+        "Uses a query without the query dimension for property totals",
+        "Does not claim the missing query strings can be recovered",
+        "States date window, search type, freshness, and dimensions"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Delete my sitemap from Search Console so all of its URLs are removed from Google immediately.",
+      "expected_output": "A correction that sitemap deletion does not deindex URLs, followed by a property-and-sitemap-specific approval boundary rather than an immediate mutation.",
+      "files": [],
+      "expectations": [
+        "Explains that deleting a sitemap does not remove its URLs from the index",
+        "Confirms the exact property and sitemap URL",
+        "Does not execute based on the user's incorrect deindexing assumption",
+        "Requires explicit approval for a corrected sitemap deletion intent",
+        "Confirms the resulting sitemap state after any approved deletion"
+      ]
+    }
+  ]
+}

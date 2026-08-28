@@ -1,0 +1,139 @@
+{
+  "skill_name": "google-ads",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Can you help me manage my Google Ads?",
+      "expected_output": "The skill checks for the NotFair MCP server connection, then resolves config from the 3-tier chain (project .notfair.json > Claude project notfair.json > global ~/.notfair/config.json), then checks for an accountId. It should not attempt to pull campaign data before completing the onboarding flow.",
+      "files": [],
+      "expectations": [
+        "The skill attempts to verify MCP server connectivity before pulling data",
+        "The skill resolves accountId from the 3-tier config chain (project > claude-project > global); auth is handled by Claude Code's native HTTP+OAuth transport, not by an API key in config",
+        "The skill checks for accountId before making campaign API calls",
+        "If any setup step is missing, the skill guides the user through resolution before proceeding"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Here's my Google Ads data. I have 3 campaigns:\n\n```json\n{\"campaigns\": [{\"name\": \"Brand - Acme Plumbing\", \"id\": \"111\", \"status\": \"ENABLED\", \"spend_30d\": 2400, \"clicks\": 890, \"impressions\": 12000, \"conversions\": 45, \"cpa\": 53.33, \"ctr\": 7.4}, {\"name\": \"Non-Brand - Emergency Plumbing\", \"id\": \"222\", \"status\": \"ENABLED\", \"spend_30d\": 4800, \"clicks\": 620, \"impressions\": 18000, \"conversions\": 12, \"cpa\": 400.00, \"ctr\": 3.4}, {\"name\": \"Non-Brand - Drain Cleaning\", \"id\": \"333\", \"status\": \"ENABLED\", \"spend_30d\": 1800, \"clicks\": 410, \"impressions\": 9500, \"conversions\": 18, \"cpa\": 100.00, \"ctr\": 4.3}],\n\"keywords\": [{\"campaign\": \"Non-Brand - Emergency Plumbing\", \"keyword\": \"emergency plumber near me\", \"spend\": 1200, \"clicks\": 180, \"conversions\": 8, \"cpa\": 150, \"qs\": 7}, {\"keyword\": \"24 hour plumbing service\", \"campaign\": \"Non-Brand - Emergency Plumbing\", \"spend\": 1800, \"clicks\": 220, \"conversions\": 0, \"cpa\": null, \"qs\": 3}, {\"keyword\": \"plumber salary\", \"campaign\": \"Non-Brand - Emergency Plumbing\", \"spend\": 450, \"clicks\": 95, \"conversions\": 0, \"cpa\": null, \"qs\": 2}, {\"keyword\": \"drain cleaning service\", \"campaign\": \"Non-Brand - Drain Cleaning\", \"spend\": 900, \"clicks\": 210, \"conversions\": 14, \"cpa\": 64.29, \"qs\": 8}],\n\"search_terms\": [{\"term\": \"how to become a plumber\", \"clicks\": 42, \"conversions\": 0, \"spend\": 180}, {\"term\": \"plumbing apprenticeship\", \"clicks\": 28, \"conversions\": 0, \"spend\": 120}, {\"term\": \"emergency plumber example-city\", \"clicks\": 35, \"conversions\": 6, \"spend\": 210}]}\n```\n\nHow are my ads doing? What should I fix?",
+      "expected_output": "A performance analysis that identifies specific waste: the 'plumber salary' keyword ($450 spent, 0 conversions, QS 2) should be paused immediately; '24 hour plumbing service' ($1800, 0 conversions, QS 3) needs urgent attention; 'how to become a plumber' and 'plumbing apprenticeship' should be added as negative keywords. The Emergency Plumbing campaign has a $400 CPA which is far above the Drain Cleaning campaign's $100 CPA. Should recommend adding 'emergency plumber example-city' as a keyword since it has 6 conversions.",
+      "files": [],
+      "expectations": [
+        "Identifies 'plumber salary' keyword as waste — names it specifically with the $450 spend and 0 conversions",
+        "Identifies '24 hour plumbing service' as problematic — $1800 spend, 0 conversions, QS 3",
+        "Recommends adding 'how to become a plumber' and 'plumbing apprenticeship' as negative keywords",
+        "Recommends adding 'emergency plumber example-city' as a keyword since it has 6 conversions",
+        "Flags the Emergency Plumbing campaign's $400 CPA as significantly worse than Drain Cleaning's $100 CPA",
+        "Calculates or estimates wasted spend with a dollar amount",
+        "Recommendations include specific keyword names and campaign names, not generic advice"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I have these keywords and want to optimize bids:\n\n```json\n{\"account_avg_cpa\": 85,\n\"keywords\": [{\"keyword\": \"roof repair austin\", \"bid\": 8.50, \"cpa\": 35, \"conversions\": 22, \"qs\": 9, \"imp_share\": 45}, {\"keyword\": \"roofing contractor\", \"bid\": 12.00, \"cpa\": 140, \"conversions\": 5, \"qs\": 6, \"imp_share\": 30}, {\"keyword\": \"metal roof installation\", \"bid\": 6.00, \"cpa\": 70, \"conversions\": 8, \"qs\": 7, \"imp_share\": 55}, {\"keyword\": \"roof inspection free\", \"bid\": 4.00, \"cpa\": null, \"conversions\": 0, \"clicks\": 45, \"spend\": 180, \"qs\": 4, \"imp_share\": 70}]}\n```",
+      "expected_output": "Bid optimization recommendations grounded in heuristics: 'roof repair austin' is a star performer (CPA $35 vs $85 avg, QS 9) — increase bid by 15-25% to capture more impression share (currently 45%). 'roofing contractor' has CPA 65% above average — decrease bid or fix QS. 'metal roof installation' is healthy. 'roof inspection free' has $180 spend with 0 conversions and QS 4 — pause or significantly reduce bid.",
+      "files": [],
+      "expectations": [
+        "Recommends increasing bid for 'roof repair austin' — references its CPA being well below account average",
+        "Recommends decreasing bid or pausing 'roofing contractor' — references its CPA being above account average",
+        "Identifies 'roof inspection free' as waste — $180 spend, 0 conversions, QS 4",
+        "Bid change recommendations stay within the 25% maximum guardrail",
+        "References impression share data in the analysis"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Check today's keywords for a small bookkeeping Google Ads account. Today has $69 spend, 2 clicks, 39 impressions, 0 conversions; 7d has $227 spend, 9 clicks, 1 conversion. Search terms are 'bookkeeping Seattle' and 'bookkeeping Kirkland'. Campaign is enabled and spending far below daily budget. What is your overview and proposal?",
+      "expected_output": "A concise recent-day operator note that reports evaluated metrics, says data is thin, does not recommend a budget increase, does not overfit 2 clicks, and proposes watching search-term quality / rank or landing-page relevance rather than mutating aggressively.",
+      "files": [
+        "google-ads/manage/references/repeatable-optimization-loops.md"
+      ],
+      "expectations": [
+        "Uses a recent-day/daily-check format with evaluated metrics and 7-day context",
+        "Explicitly labels the data as too thin for a strong conversion-based recommendation",
+        "Does not recommend increasing budget when spend is far below budget",
+        "Focuses next proposal on query quality, rank/relevance, landing page, or watch conditions",
+        "Avoids adding negatives for relevant bookkeeping terms without more evidence"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "I have broad match search terms with repeated no-conversion patterns: 'bookkeeping jobs', 'bookkeeper salary', 'free bookkeeping template', 'bookkeeping Seattle', and 'quickbooks cleanup service'. Build a cleanup plan.",
+      "expected_output": "The skill should aggregate by n-gram/action bucket, recommend job/salary/free/template as negative candidates, preserve high-intent commercial/local terms like bookkeeping Seattle and quickbooks cleanup service, and check conflicts before bulk negatives.",
+      "files": [
+        "google-ads/manage/references/search-term-analysis-guide.md",
+        "google-ads/manage/references/repeatable-optimization-loops.md"
+      ],
+      "expectations": [
+        "Groups repeated patterns into n-grams instead of treating every query independently",
+        "Classifies recommendations into action buckets such as negative candidate, keyword candidate, and ad/LP mismatch",
+        "Recommends negatives for job/salary/free/template intent",
+        "Does not negative high-intent local/commercial terms solely because they lack conversions",
+        "Mentions checking positive-keyword/search-term conflicts before executing bulk negatives"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Daily CentsIQ ads: yesterday spent $70 on 3 clicks and 0 leads, 7-day baseline is $230 spend, 9 clicks, 1 lead. The main keyword was bookkeeper Seattle. Search terms are relevant but sparse. What should the operator brief say?",
+      "expected_output": "A daily ads operator brief with scope/window, snapshot, budget/pacing context, thin-data caveat, watch threshold for bookkeeper Seattle, no aggressive negative or budget change, and an approval queue only if there is a clearly safe action.",
+      "files": [
+        "google-ads/manage/references/daily-ads-operator.md",
+        "google-ads/shared/local-leadgen-playbook.md"
+      ],
+      "expectations": [
+        "Uses daily operator format with scope, snapshot, read, watch, recommendations",
+        "Calls out thin data and avoids overfitting 3 clicks",
+        "Does not recommend raising budget without budget-lost evidence or proven CPA",
+        "Frames bookkeeper Seattle as a watch item with threshold rather than immediate pause",
+        "Keeps client/business lead-quality context visible"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Search term cleanup: broad match produced terms jobs, salary, free template, bookkeeping Seattle, quickbooks cleanup service, and bookkeeping course. Build the proposed actions.",
+      "expected_output": "Classifies terms into action buckets; recommends negatives for jobs/salary/free template/course; preserves bookkeeping Seattle and quickbooks cleanup service as watch/keyword candidates unless economics prove otherwise; says approval and conflict checks are required before mutation.",
+      "files": [
+        "google-ads/manage/references/search-term-triage.md",
+        "google-ads/shared/local-leadgen-playbook.md"
+      ],
+      "expectations": [
+        "Groups bad intent patterns rather than treating every term independently",
+        "Recommends negatives for employment/training/free-template intent",
+        "Does not negative plausible commercial local/service terms solely for no conversions",
+        "Mentions conflict checks before negatives",
+        "Produces an approval-ready action queue"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Apply approved negative keywords. The tool returned changeId 123 but success=false with authorization_error=7. What should you tell the user and do next?",
+      "expected_output": "Does not claim success; explains that changeId can represent an attempted-change log, verifies live state, preserves the error/request details, compares nearby successful writes, and recommends safe debugging or tool feedback instead of retrying blindly.",
+      "files": [
+        "google-ads/manage/references/safe-executor.md"
+      ],
+      "expectations": [
+        "Does not treat changeId as proof of live Google Ads state",
+        "Requires live read-back verification",
+        "Separates failed/unverified writes from successful writes",
+        "Preserves useful error details",
+        "Avoids blind repeated retries"
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "For a NotFair Google Ads MCP campaign on Maximize Clicks with cheap generic MCP traffic and no signups, what should we improve first?",
+      "expected_output": "Uses the SaaS/B2B playbook: avoid optimizing for cheap clicks, tighten generic curiosity/search-term waste, improve brand/trust and landing-page message match, prefer activation-level conversions such as connected account or first successful action, and delay budget scaling until query quality and activation signal improve.",
+      "files": [
+        "google-ads/shared/saas-b2b-playbook.md",
+        "google-ads/manage/references/daily-ads-operator.md"
+      ],
+      "expectations": [
+        "Rejects cheap clicks as the success metric",
+        "Prioritizes activation-quality conversion signal over raw signup/clicks",
+        "Calls out brand trust / unclear relationship risk for tool integrations",
+        "Recommends search-term cleanup before scaling",
+        "Does not recommend immediate budget increase"
+      ]
+    }
+  ]
+}

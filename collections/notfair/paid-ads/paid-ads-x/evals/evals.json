@@ -1,0 +1,31 @@
+{
+  "skill_name": "paid-ads-x",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "My connected X Ads account spent $4,200 in the last 7 days. One line item has primary_web_event_tag=null, while WEB_CONVERSION stats show 18 sign-ups. Audit it and tell me whether conversions are broken.",
+      "expected_output": "A live-data-first audit that does not mistake optimization configuration for attributed performance, checks account context and stats, and reports findings with currency and date-window discipline.",
+      "files": [],
+      "expectations": [
+        "Confirms the X Ads connector and selected account before claiming live access",
+        "Does not infer zero conversions from primary_web_event_tag=null",
+        "Uses WEB_CONVERSION performance data as the source for attributed sign-ups",
+        "States the complete date window, currency, and conversion definition",
+        "Keeps recommendations separate from any mutation"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Increase my X campaign budget from $100/day to $160/day and launch a new line item now.",
+      "expected_output": "An approval-gated plan that verifies the live account, previews spend-affecting changes with dry-run when available, creates new entities paused, and waits for exact approval before applying.",
+      "files": [],
+      "expectations": [
+        "Shows the current and proposed daily and implied monthly spend",
+        "Uses a dry-run preview when the connector supports it",
+        "Creates the new line item paused rather than immediately active",
+        "Requires explicit approval for the exact spend-affecting changes",
+        "Verifies applied changes from before/after evidence or a fresh read"
+      ]
+    }
+  ]
+}

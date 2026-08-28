@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Search Console"
+  short_description: "Analyze live Search Console performance"
+  default_prompt: "Use $search-console to analyze my connected Search Console property and find organic growth opportunities."

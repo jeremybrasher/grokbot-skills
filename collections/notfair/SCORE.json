@@ -1,0 +1,67 @@
+{
+  "slug": "notfair",
+  "attempt": 2,
+  "scores": {
+    "OFI": 10,
+    "HD": 10,
+    "DBC": 9,
+    "NRC": 10,
+    "RWR": 9,
+    "MT": 9,
+    "OEA": 9
+  },
+  "weighted": {
+    "OFI": 20.0,
+    "HD": 18.0,
+    "DBC": 14.4,
+    "NRC": 15.0,
+    "RWR": 11.7,
+    "MT": 9.0,
+    "OEA": 7.2
+  },
+  "holds": [],
+  "veto": null,
+  "composite": 95.3,
+  "decision": "admit",
+  "rationale": "OFI/HD maximal: intake from a harmless list before any live claim, and a hold table that returns the gap instead of waiting on an empty object. DBC 9: cut-first is named for pages, campaigns, and schema; destruction is still policy, not a live confirm-before-delete surface. NRC 10: refuse list covers assumed inventory, sitemap-as-index, pointer-as-method, invented IDs, and a second object on an occupied job. RWR 9: the method card survives a missing log or wrapper; three-file drift is METHOD-wins rather than a hash. MT 9: eight-step card plus companion binding table. OEA 9: eight named observer vectors and a post-measurement yes treated as a different reading. Composite 95.3, no HOLD, no veto.",
+  "axiom_message_ids": [
+    "msg_b8caba2886fc44e69cf4c84f"
+  ],
+  "prior": {
+    "attempt": 1,
+    "scores": {
+      "OFI": 9,
+      "HD": 9,
+      "DBC": 7,
+      "NRC": 9,
+      "RWR": 8,
+      "MT": 8,
+      "OEA": 9
+    },
+    "weighted": {
+      "OFI": 18.0,
+      "HD": 16.2,
+      "DBC": 11.2,
+      "NRC": 13.5,
+      "RWR": 10.4,
+      "MT": 8.0,
+      "OEA": 7.2
+    },
+    "composite": 84.5,
+    "decision": "upgrade",
+    "axiom_message_ids": [
+      "msg_3872f7d57f5b40008f9c0a1a"
+    ]
+  },
+  "stopgate": "PRIME",
+  "stopgate_notes": "Kernel names locked. Scored from upgraded METHOD.md. Instrument sum 20+18+14.4+15+11.7+9+7.2=95.3. PRIME stopgate: copy to collections/ only after govern allow.",
+  "instrument": "SCORING.md / axi-m-skill-alignment",
+  "date": "2026-08-28",
+  "govern_run_id": "run_c9443efeedb547e1b916b386",
+  "remaining_holes": [
+    "DBC 9: cut-first is policy; no operator-facing destroy-confirm before pause/retire",
+    "RWR 9: METHOD-wins on drift, no recipe hash",
+    "MT 9: companion table is in METHOD.md; AXI\u00d8M withheld a point on excerpt fidelity",
+    "OEA 9: no flag for observer effects that already existed before the session"
+  ]
+}

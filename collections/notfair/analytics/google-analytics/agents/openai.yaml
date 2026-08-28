@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Analytics"
+  short_description: "Analyze and configure connected GA4 data"
+  default_prompt: "Use $google-analytics to analyze my connected GA4 property and explain the biggest changes."

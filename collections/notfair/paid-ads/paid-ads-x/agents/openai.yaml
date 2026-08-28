@@ -1,0 +1,4 @@
+interface:
+  display_name: "X Ads"
+  short_description: "Audit and operate X Ads safely"
+  default_prompt: "Use $paid-ads-x to audit my connected X Ads account and prioritize improvements."
