@@ -1,0 +1,61 @@
+{
+  "slug": "test-driven-development",
+  "attempt": 2,
+  "scores": {
+    "OFI": 9,
+    "HD": 10,
+    "DBC": 9,
+    "NRC": 9,
+    "RWR": 8,
+    "MT": 9,
+    "OEA": 10
+  },
+  "weighted": {
+    "OFI": 18.0,
+    "HD": 18.0,
+    "DBC": 14.4,
+    "NRC": 13.5,
+    "RWR": 10.4,
+    "MT": 9.0,
+    "OEA": 8.0
+  },
+  "holds": [],
+  "veto": null,
+  "composite": 91.3,
+  "decision": "admit",
+  "rationale": "OFI 9: three-item intake (named required behavior, a way to tell the object is wrong, a surface you can exercise) before RED; a guessed-requirement test is named as generation, not observation. HD 10: ten-row HOLD table returns a named non-green for each gap, including green-suite-as-wrong-object. DBC 9: delete-untested-code, no feature the current test does not require, no second test until this one cycles; iron-law ceremony still adds steps after the object is named. NRC 9: refuse list plus pre-return checklist and the invert-the-requirement output test; checklist is declarative. RWR 8: six-step method card runs from this file if writing-good-tests.md is missing; the companion remains a minor orphan pull. MT 9: intake \u2192 confirm object \u2192 RED \u2192 GREEN \u2192 REFACTOR is portable. OEA 10: seven recipe-caused distortions named, including green suite as the wrong object, plus residual human checks. Composite 91.3, no HOLD, no veto \u2014 admit on the instrument. PRIME stopgate: not copied into skills/, not committed, not pushed.",
+  "axiom_message_ids": [
+    "msg_814578935a8f4b53bffdf32b"
+  ],
+  "prior": {
+    "attempt": 1,
+    "scores": {
+      "OFI": 7,
+      "HD": 9,
+      "DBC": 10,
+      "NRC": 8,
+      "RWR": 9,
+      "MT": 8,
+      "OEA": 7
+    },
+    "weighted": {
+      "OFI": 14.0,
+      "HD": 16.2,
+      "DBC": 16.0,
+      "NRC": 12.0,
+      "RWR": 11.7,
+      "MT": 8.0,
+      "OEA": 5.6
+    },
+    "composite": 83.5,
+    "decision": "upgrade",
+    "axiom_message_ids": [
+      "msg_90e72455f1c9470197928c94"
+    ]
+  },
+  "stopgate": "PRIME",
+  "stopgate_notes": "Kernel names locked. grounding_governor repaired (low_keyword_coverage). Scored from upgraded SKILL.md operational excerpt (attempt 2). Composite 91.3 clears 90 with no HOLD and no veto so decision is admit. PRIME stopgate: no copy into skills/, no commit, no push.",
+  "instrument": "SCORING.md / axi-m-skill-alignment",
+  "date": "2026-08-28",
+  "govern_run_id": "run_29a027d5cb5f49ce9b2406aa"
+}

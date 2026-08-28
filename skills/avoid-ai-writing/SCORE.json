@@ -1,0 +1,61 @@
+{
+  "slug": "avoid-ai-writing",
+  "attempt": 2,
+  "scores": {
+    "OFI": 10,
+    "HD": 10,
+    "DBC": 9,
+    "NRC": 9,
+    "RWR": 9,
+    "MT": 9,
+    "OEA": 10
+  },
+  "weighted": {
+    "OFI": 20.0,
+    "HD": 18.0,
+    "DBC": 14.4,
+    "NRC": 13.5,
+    "RWR": 11.7,
+    "MT": 9.0,
+    "OEA": 8.0
+  },
+  "holds": [],
+  "veto": null,
+  "composite": 94.6,
+  "decision": "admit",
+  "rationale": "OFI 10 and HD 10: three-item intake (text, mode, authority) before any flag or rewrite; nine-row HOLD table returns a named non-rewrite, including verdict-requests, catalog-stale mismatch, and sterile-rewrite-needs-personality-kit. DBC 9: subtract-and-sharpen, leave already-human passages, prefer detect, do not expand the catalog mid-run; optional iterate/voice/style still exist as expansion paths. NRC 9: refuse list (verdict, invented specifics, humanizer fingerprint, invented catalog rules) plus pre-return checklist; checklist is declarative. RWR 9: six-step method card runs from this file when the list rots; the catalog remains a dated snapshot a later agent can still over-weight. MT 9: intake \u2192 observe text \u2192 audit \u2192 act by mode \u2192 second pass is portable. OEA 10: seven recipe-caused distortions named (catalog-as-object, list rot, detect-as-verdict, humanizer fingerprint, edit-corruption, second-pass voice, profile pull) and residual human judgment at the edge named. Composite 94.6, no HOLD, no veto \u2014 admit on the instrument. PRIME stopgate: not copied into skills/, not committed, not pushed.",
+  "axiom_message_ids": [
+    "msg_fc9c5c0f18e04663961ff769"
+  ],
+  "prior": {
+    "attempt": 1,
+    "scores": {
+      "OFI": 8,
+      "HD": 9,
+      "DBC": 8,
+      "NRC": 9,
+      "RWR": 7,
+      "MT": 8,
+      "OEA": 7
+    },
+    "weighted": {
+      "OFI": 16.0,
+      "HD": 16.2,
+      "DBC": 12.8,
+      "NRC": 13.5,
+      "RWR": 9.1,
+      "MT": 8.0,
+      "OEA": 5.6
+    },
+    "composite": 81.2,
+    "decision": "upgrade",
+    "axiom_message_ids": [
+      "msg_38d3a089d2a5407eb495e5fe"
+    ]
+  },
+  "stopgate": "PRIME",
+  "stopgate_notes": "Kernel names locked. grounding_governor repaired (low_keyword_coverage). Scored from upgraded SKILL.md operational excerpt (attempt 2); pattern catalog condensed, upgrade sections and OEA in full. Composite 94.6 clears 90 with no HOLD and no veto so decision is admit. PRIME stopgate: no copy into skills/, no commit, no push.",
+  "instrument": "SCORING.md / axi-m-skill-alignment",
+  "date": "2026-08-28",
+  "govern_run_id": "run_29a027d5cb5f49ce9b2406aa"
+}

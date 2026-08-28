@@ -40,3 +40,7 @@ Only skills that clear AXIØM alignment at 90, with no HOLD and no veto. Raw har
 - `skills/task-observer` — 92.8 (2026-08-28)
 
 - `skills/vibe-creating-skill` — 90.8 (2026-08-28)
+
+- `skills/test-driven-development` — 91.3 (2026-08-28)
+
+- `skills/avoid-ai-writing` — 94.6 (2026-08-28)
