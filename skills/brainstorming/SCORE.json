@@ -1,0 +1,62 @@
+{
+  "slug": "brainstorming",
+  "attempt": 3,
+  "scores": {
+    "OFI": 9,
+    "HD": 10,
+    "DBC": 9,
+    "NRC": 9,
+    "RWR": 9,
+    "MT": 8,
+    "OEA": 8
+  },
+  "weighted": {
+    "OFI": 18.0,
+    "HD": 18.0,
+    "DBC": 14.4,
+    "NRC": 13.5,
+    "RWR": 11.7,
+    "MT": 8.0,
+    "OEA": 6.4
+  },
+  "holds": [],
+  "veto": null,
+  "composite": 90.0,
+  "decision": "admit",
+  "rationale": "Intake still names three preconditions and stops on any missing one. HD remains the eight-row HOLD table. DBC and NRC unchanged: cut-first defaults, refuse list, pre-return output test. RWR is 9: the method card plus inlined spec-prose, plan method, and companion loop let a later agent run from this file alone; companion files are optional extras. MT is 8: path taxonomy, ratchet, and plan method are portable, but the visual companion loop is still read as procedure more than transferable method. OEA names classification-as-recommendation (shrinks the design set), spec/plan-as-object, and five residual human checks. Composite 90.0, no HOLD, no veto \u2014 admit on the instrument. PRIME stopgate: not copied into skills/, not committed, not pushed.",
+  "axiom_message_ids": [
+    "msg_7a2c434b4ebc4c65ae8450bf"
+  ],
+  "prior": {
+    "attempt": 2,
+    "scores": {
+      "OFI": 9,
+      "HD": 10,
+      "DBC": 9,
+      "NRC": 9,
+      "RWR": 8,
+      "MT": 8,
+      "OEA": 9
+    },
+    "weighted": {
+      "OFI": 18.0,
+      "HD": 18.0,
+      "DBC": 14.4,
+      "NRC": 13.5,
+      "RWR": 10.4,
+      "MT": 8.0,
+      "OEA": 7.2
+    },
+    "composite": 89.5,
+    "decision": "upgrade",
+    "axiom_message_ids": [
+      "msg_5b19353a6ebd462daded8b2e"
+    ],
+    "govern_run_id": "run_11b0edd0117e4f7489bbfd88"
+  },
+  "stopgate": "PRIME",
+  "stopgate_notes": "Kernel names locked. Scored from upgraded SKILL.md (attempt 3) with companion methods folded in. Composite 90.0 clears 90 with no HOLD and no veto so decision is admit. PRIME stopgate: no copy into skills/, no commit, no push.",
+  "instrument": "SCORING.md / axi-m-skill-alignment",
+  "date": "2026-08-28",
+  "govern_run_id": "run_934304f59768430dbc834269"
+}

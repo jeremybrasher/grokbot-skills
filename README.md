@@ -30,3 +30,5 @@ Nothing ships into `skills/` until it clears [SCORING.md](SCORING.md). Raw copie
 Only skills that clear AXIØM alignment at 90, with no HOLD and no veto. Raw harvest stays off this repo.
 
 - `skills/buyer-eval` — 92.8 (2026-08-28)
+
+- `skills/brainstorming` — 90.0 (2026-08-28)
