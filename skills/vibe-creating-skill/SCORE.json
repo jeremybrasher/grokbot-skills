@@ -1,0 +1,62 @@
+{
+  "slug": "vibe-creating-skill",
+  "attempt": 2,
+  "scores": {
+    "OFI": 9,
+    "HD": 10,
+    "DBC": 9,
+    "NRC": 9,
+    "RWR": 9,
+    "MT": 8,
+    "OEA": 9
+  },
+  "weighted": {
+    "OFI": 18.0,
+    "HD": 18.0,
+    "DBC": 14.4,
+    "NRC": 13.5,
+    "RWR": 11.7,
+    "MT": 8.0,
+    "OEA": 7.2
+  },
+  "holds": [],
+  "veto": null,
+  "composite": 90.8,
+  "decision": "admit",
+  "rationale": "OFI 9: three-item intake (video-prompt object, readable text, rewrite-or-judge task) with stop-and-name-the-gap before any generation; not ceiling because the object can still be a feeling. HD 10: fourteen-row HOLD table returns a named non-rewrite (including abstract-only, dialogue-sync long-form, industrial shot list, UI/tutorial, tied visual anchors). DBC 9: pass-through default, delete undeclared technical decoration, no invented beats or style packs; extra-atmosphere 'evidence' is not itself operationalized. NRC 9: refuse list plus fourteen-item pre-return checklist; the checklist is declarative, not a runnable fail state. RWR 9: locked ten-step method card plus vibe fields (visual center / emotional direction / experience continuity) so a later agent gets the same Judgment/Action/Result/Notes family; same-input same-S/E/action is a rule, not a hash. MT 8: S/E/I scoring rules and six action definitions are portable; mode pick and S×E cell still have carry cost. OEA 9: thirteen recipe-caused distortions named (precision-to-intent loss, register overwrite, genre drift from mode, visual-center cut, length compression, de-numbering, sound/picture desync, optional-VC nudge, model-fitness frame, invented emotion in translation, pass-through-as-readiness, disclosure-as-frame, non-render) and residual human checks named. Composite 90.8, no HOLD, no veto — admit on the instrument. PRIME stopgate: not copied into skills/, not committed, not pushed.",
+  "axiom_message_ids": [
+    "msg_faf5729b05bb40e1874a4afd"
+  ],
+  "prior": {
+    "attempt": 1,
+    "scores": {
+      "OFI": 9,
+      "HD": 9,
+      "DBC": 9,
+      "NRC": 8,
+      "RWR": 7,
+      "MT": 7,
+      "OEA": 5
+    },
+    "weighted": {
+      "OFI": 18.0,
+      "HD": 16.2,
+      "DBC": 14.4,
+      "NRC": 12.0,
+      "RWR": 9.1,
+      "MT": 7.0,
+      "OEA": 4.0
+    },
+    "composite": 80.7,
+    "decision": "upgrade",
+    "axiom_message_ids": [
+      "msg_7784f625b5a34e5394fd5840"
+    ],
+    "govern_run_id": "run_77bb74e7637d49b88be7d701"
+  },
+  "stopgate": "PRIME",
+  "stopgate_notes": "Kernel names locked. grounding_governor repaired (insufficient_citations). tailing_linter warned. Scored from upgraded SKILL.md operational excerpt (attempt 2). Composite 90.8 clears 90 with no HOLD and no veto so decision is admit. PRIME stopgate: no copy into skills/, no commit, no push.",
+  "instrument": "SCORING.md / axi-m-skill-alignment",
+  "date": "2026-08-28",
+  "govern_run_id": "run_805ad7772a9445fc9b3f327e"
+}
