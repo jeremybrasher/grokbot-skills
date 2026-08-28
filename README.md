@@ -23,7 +23,7 @@ Offensive / exploit skills from the source list are not copied.
 
 ## Admission
 
-Nothing ships into `skills/` until it clears [SCORING.md](SCORING.md). Raw copies land in `incoming/` first.
+Nothing ships into `skills/` or `collections/` until it clears [SCORING.md](SCORING.md). Raw copies land in `incoming/` first.
 
 ## Admitted
 
@@ -44,3 +44,5 @@ Only skills that clear AXIØM alignment at 90, with no HOLD and no veto. Raw har
 - `skills/test-driven-development` — 91.3 (2026-08-28)
 
 - `skills/avoid-ai-writing` — 94.6 (2026-08-28)
+
+- `collections/great-cto` — 93.0 (2026-08-28)

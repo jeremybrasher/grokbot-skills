@@ -1,0 +1,69 @@
+{
+  "slug": "great-cto",
+  "attempt": 2,
+  "scores": {
+    "OFI": 10,
+    "HD": 10,
+    "DBC": 9,
+    "NRC": 9,
+    "RWR": 9,
+    "MT": 9,
+    "OEA": 8
+  },
+  "weighted": {
+    "OFI": 20.0,
+    "HD": 18.0,
+    "DBC": 14.4,
+    "NRC": 13.5,
+    "RWR": 11.7,
+    "MT": 9.0,
+    "OEA": 6.4
+  },
+  "holds": [],
+  "veto": null,
+  "composite": 93.0,
+  "decision": "admit",
+  "rationale": "OFI and HD are both maximal: intake lists four named requirements with stop-on-missing-item, and the HOLD table enumerates distinct named conditions each with a prescribed return instead of a guess. DBC 9: fast-path pruning, stack-reuse, silent decision-eval skip, and scope refused at write; cut logic is policy, not a live scan. NRC 9: refuse list (plan-as-product, auto-approval, unverifiable-as-pass, general-purpose on matched work, unfalsifiable blockers) plus three-state verification as the output test. RWR 9 (was 7): nine-step method card is self-contained; companion binding HOLDs when a later agent is handed only a sibling skill; dispatcher must log 'decided nothing'. MT 9: the card is step-indexed and readable; specialist rows and the type-conflict table still live in the orchestrator. OEA 8: names gate:product, specialist framing, approval-level, second-model verification, vertical vocabulary, and cost-attribution as distortions, plus what still needs a human. Composite 93.0, no HOLD, no veto \u2014 admit on the instrument. PRIME stopgate: not copied into skills/, not committed, not pushed.",
+  "axiom_message_ids": [
+    "msg_fa1531c3c9794dd09b6829da"
+  ],
+  "prior": {
+    "attempt": 1,
+    "scores": {
+      "OFI": 9,
+      "HD": 9,
+      "DBC": 8,
+      "NRC": 8,
+      "RWR": 7,
+      "MT": 8,
+      "OEA": 7
+    },
+    "weighted": {
+      "OFI": 18.0,
+      "HD": 16.2,
+      "DBC": 12.8,
+      "NRC": 12.0,
+      "RWR": 9.1,
+      "MT": 8.0,
+      "OEA": 5.6
+    },
+    "composite": 81.7,
+    "decision": "upgrade",
+    "axiom_message_ids": [
+      "msg_e074839f127f41178350733a"
+    ],
+    "govern_run_id": "run_551088741ab24b58bd0319ba"
+  },
+  "stopgate": "PRIME",
+  "stopgate_notes": "Kernel names locked. grounding_governor repaired. tailing_linter warned. quality confidence 0.60. Scored from upgraded METHOD.md plus README Pack method section and great_cto pack pointer. Companions not rewritten. Composite 93.0 clears 90 with no HOLD and no veto so decision is admit. PRIME stopgate: no copy into skills/, no commit, no push.",
+  "instrument": "SCORING.md / axi-m-skill-alignment",
+  "date": "2026-08-28",
+  "govern_run_id": "run_6bac5265c6bc4332a4ab5607",
+  "remaining_holes": [
+    "DBC 9: cut-first is stated policy (fast path, reuse stack, skip silent) not a live delete-or-reuse scan of existing artifacts before create.",
+    "NRC 9: refuse list and three-state verify exist; category integrity still depends on the specialist table living in the orchestrator.",
+    "RWR 9: pack-level binding is in METHOD.md / README / root SKILL pointer; the 36 companion files still read as standalone recipes if METHOD.md is not loaded.",
+    "MT 9: method card defers specialist routing rows and type-conflict pairs to skills/great_cto/SKILL.md.",
+    "OEA 8: observer effects are named; weaker on how restating the card in three files can itself drift, and on the second verifier as a persistent bias."
+  ]
+}
