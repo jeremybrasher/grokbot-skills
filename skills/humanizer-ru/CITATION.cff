@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Если вы ссылаетесь на этот скилл или его базу маркеров, используйте эти данные."
+title: "humanizer-ru: доказательный скилл для очеловечивания русскоязычного ИИ-текста"
+abstract: >-
+  Агентный скилл формата Agent Skills: находит и убирает следы машинной генерации
+  в русскоязычном тексте. Содержит 56 паттернов редактуры и 40 проверяемых
+  regex-маркеров с реестром доказательств: immutable-источник, дата обращения,
+  дословный образец, класс доказательства и fixture — полная запись есть
+  у 38 маркеров из 40, остальные закрыты фикстурами.
+authors:
+  - name: "Vladimir-Human"
+    alias: Vladimir-Human
+    website: "https://github.com/Vladimir-Human"
+repository-code: "https://github.com/Vladimir-Human/humanizer-ru"
+url: "https://github.com/Vladimir-Human/humanizer-ru"
+license: MIT
+version: 3.15.1
+date-released: "2026-08-25"
+keywords:
+  - agent-skills
+  - russian
+  - text-editing
+  - ai-generated-text
+  - humanizer

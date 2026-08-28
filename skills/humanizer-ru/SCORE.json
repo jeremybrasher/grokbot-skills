@@ -1,0 +1,62 @@
+{
+  "slug": "humanizer-ru",
+  "attempt": 2,
+  "scores": {
+    "OFI": 10,
+    "HD": 10,
+    "DBC": 9,
+    "NRC": 9,
+    "RWR": 9,
+    "MT": 8,
+    "OEA": 9
+  },
+  "weighted": {
+    "OFI": 20.0,
+    "HD": 18.0,
+    "DBC": 14.4,
+    "NRC": 13.5,
+    "RWR": 11.7,
+    "MT": 8.0,
+    "OEA": 7.2
+  },
+  "holds": [],
+  "veto": null,
+  "composite": 92.8,
+  "decision": "admit",
+  "rationale": "OFI and HD at ceiling: three-item intake (explicit request, Russian prose, check-vs-rewrite) and a twelve-row HOLD table that returns a named non-rewrite. DBC 9: cut-first defaults, green paragraphs left, no invented facts; volume thresholds 3–5 / 6+ remain heuristics. NRC 9: refuse list plus pre-return checklist; circular 0–10 self-score undercuts the output test. RWR 9: locked ten-step method card runs from this file if references/ are missing. MT 8: card is portable but marker taxonomy and criticality still have carry cost. OEA 9: rewrite-caused distortions named (new syntax, fact-list rebuild, marker-count overwrite of a live official voice, shared humanized rhythm, circular self-score, watermark not removed) and residual human checks named. Composite 92.8, no HOLD, no veto — admit on the instrument. PRIME stopgate: not copied into skills/, not committed, not pushed.",
+  "axiom_message_ids": [
+    "msg_430f9df80c3e448d90ce5dbe"
+  ],
+  "prior": {
+    "attempt": 1,
+    "scores": {
+      "OFI": 9,
+      "HD": 9,
+      "DBC": 8,
+      "NRC": 8,
+      "RWR": 7,
+      "MT": 8,
+      "OEA": 6
+    },
+    "weighted": {
+      "OFI": 18.0,
+      "HD": 16.2,
+      "DBC": 12.8,
+      "NRC": 12.0,
+      "RWR": 9.1,
+      "MT": 8.0,
+      "OEA": 4.8
+    },
+    "composite": 80.9,
+    "decision": "upgrade",
+    "axiom_message_ids": [
+      "msg_323d13acc3934c6a916ef0d2"
+    ],
+    "govern_run_id": "run_0bf55f9a3eb443cab3684dfc"
+  },
+  "stopgate": "PRIME",
+  "stopgate_notes": "Kernel names locked. Scored from upgraded SKILL.md operational text (attempt 2). Composite 92.8 clears 90 with no HOLD and no veto so decision is admit. PRIME stopgate: no copy into skills/, no commit, no push.",
+  "instrument": "SCORING.md / axi-m-skill-alignment",
+  "date": "2026-08-28",
+  "govern_run_id": "run_74f83b4200ca4dde83e7eb24"
+}
