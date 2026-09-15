@@ -1,0 +1,46 @@
+{
+  "slug": "setup-pstack",
+  "attempt": 2,
+  "scores": {
+    "OFI": 9,
+    "HD": 10,
+    "DBC": 9,
+    "NRC": 9,
+    "RWR": 9,
+    "MT": 9,
+    "OEA": 9
+  },
+  "weighted": {
+    "OFI": 18.0,
+    "HD": 18.0,
+    "DBC": 14.4,
+    "NRC": 13.5,
+    "RWR": 11.7,
+    "MT": 9.0,
+    "OEA": 7.2
+  },
+  "holds": [],
+  "veto": null,
+  "composite": 91.8,
+  "decision": "admit",
+  "rationale": "After upgrade: intake+HOLD+cut-first+refuse+output-check+OEA; domain preserved. before_composite=64.1",
+  "prior": {
+    "attempt": 1,
+    "scores": {
+      "OFI": 7,
+      "HD": 6,
+      "DBC": 5,
+      "NRC": 7,
+      "RWR": 8,
+      "MT": 8,
+      "OEA": 3
+    },
+    "holds": [],
+    "composite": 64.1,
+    "decision": "pipeline"
+  },
+  "stopgate": "PRIME",
+  "instrument": "SCORING.md / axi-m-skill-alignment",
+  "date": "2026-09-15",
+  "source": "skills/setup-pstack/SKILL.md"
+}

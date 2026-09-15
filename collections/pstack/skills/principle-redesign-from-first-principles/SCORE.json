@@ -1,0 +1,48 @@
+{
+  "slug": "principle-redesign-from-first-principles",
+  "attempt": 2,
+  "scores": {
+    "OFI": 9,
+    "HD": 9,
+    "DBC": 9,
+    "NRC": 9,
+    "RWR": 9,
+    "MT": 9,
+    "OEA": 9
+  },
+  "weighted": {
+    "OFI": 18.0,
+    "HD": 16.2,
+    "DBC": 14.4,
+    "NRC": 13.5,
+    "RWR": 11.7,
+    "MT": 9.0,
+    "OEA": 7.2
+  },
+  "holds": [],
+  "veto": null,
+  "composite": 90.0,
+  "decision": "admit",
+  "rationale": "After upgrade: intake+HOLD+cut-first+refuse+output-check+OEA; domain preserved. before_composite=None",
+  "prior": {
+    "attempt": 1,
+    "scores": {
+      "OFI": 2,
+      "HD": 2,
+      "DBC": 3,
+      "NRC": 3,
+      "RWR": 5,
+      "MT": 5,
+      "OEA": null
+    },
+    "holds": [
+      "OEA"
+    ],
+    "composite": null,
+    "decision": "pipeline"
+  },
+  "stopgate": "PRIME",
+  "instrument": "SCORING.md / axi-m-skill-alignment",
+  "date": "2026-09-15",
+  "source": "skills/principle-redesign-from-first-principles/SKILL.md"
+}

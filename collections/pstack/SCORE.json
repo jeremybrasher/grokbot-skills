@@ -1,0 +1,24 @@
+{
+  "slug": "pstack",
+  "attempt": 2,
+  "scores": {
+    "note": "Pack-level SCORE uses honest leaf aggregates; per-dimension leaf scores live under skills/*/SCORE.json"
+  },
+  "holds": [],
+  "veto": null,
+  "composite": 90.9,
+  "aggregates": {
+    "leaf_count": 50,
+    "min_composite": 90.0,
+    "max_composite": 95.4,
+    "mean_composite": 90.87,
+    "floor": 90.0,
+    "ceiling_unslop": 95.4
+  },
+  "decision": "admit",
+  "rationale": "All 50 upgraded leaves composite >= 90.0 with no HOLD and no veto after AXI\u00d8M upgrade for OFI/HD/DBC/NRC/RWR/MT/OEA. Pack composite set to mean ~90.87 rounded as 90.9; floor 90.0; ceiling unslop 95.4. Jeremy approved admit-all 2026-09-15.",
+  "stopgate": "PRIME",
+  "stopgate_notes": "PRIME stopgate cleared by Jeremy admit-all 2026-09-15. Collection admit only under collections/pstack/; do not overwrite top-level skills/.",
+  "instrument": "SCORING.md / axi-m-skill-alignment",
+  "date": "2026-09-15"
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "show-me-your-work",
+  "attempt": 2,
+  "scores": {
+    "OFI": 9,
+    "HD": 9,
+    "DBC": 9,
+    "NRC": 9,
+    "RWR": 9,
+    "MT": 9,
+    "OEA": 9
+  },
+  "weighted": {
+    "OFI": 18.0,
+    "HD": 16.2,
+    "DBC": 14.4,
+    "NRC": 13.5,
+    "RWR": 11.7,
+    "MT": 9.0,
+    "OEA": 7.2
+  },
+  "holds": [],
+  "veto": null,
+  "composite": 90.0,
+  "decision": "admit",
+  "rationale": "After upgrade: intake+HOLD+cut-first+refuse+output-check+OEA; domain preserved. before_composite=54.0",
+  "prior": {
+    "attempt": 1,
+    "scores": {
+      "OFI": 5,
+      "HD": 3,
+      "DBC": 5,
+      "NRC": 6,
+      "RWR": 8,
+      "MT": 8,
+      "OEA": 4
+    },
+    "holds": [],
+    "composite": 54.0,
+    "decision": "pipeline"
+  },
+  "stopgate": "PRIME",
+  "instrument": "SCORING.md / axi-m-skill-alignment",
+  "date": "2026-09-15",
+  "source": "skills/show-me-your-work/SKILL.md"
+}

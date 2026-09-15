@@ -1,0 +1,46 @@
+{
+  "slug": "unslop",
+  "attempt": 2,
+  "scores": {
+    "OFI": 10,
+    "HD": 10,
+    "DBC": 10,
+    "NRC": 9,
+    "RWR": 9,
+    "MT": 9,
+    "OEA": 9
+  },
+  "weighted": {
+    "OFI": 20.0,
+    "HD": 18.0,
+    "DBC": 16.0,
+    "NRC": 13.5,
+    "RWR": 11.7,
+    "MT": 9.0,
+    "OEA": 7.2
+  },
+  "holds": [],
+  "veto": null,
+  "composite": 95.4,
+  "decision": "admit",
+  "rationale": "After upgrade: intake+HOLD+cut-first+refuse+output-check+OEA; domain preserved. before_composite=55.7",
+  "prior": {
+    "attempt": 1,
+    "scores": {
+      "OFI": 3,
+      "HD": 2,
+      "DBC": 8,
+      "NRC": 9,
+      "RWR": 8,
+      "MT": 7,
+      "OEA": 3
+    },
+    "holds": [],
+    "composite": 55.7,
+    "decision": "pipeline"
+  },
+  "stopgate": "PRIME",
+  "instrument": "SCORING.md / axi-m-skill-alignment",
+  "date": "2026-09-15",
+  "source": "skills/unslop/SKILL.md"
+}

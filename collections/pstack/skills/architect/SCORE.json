@@ -1,0 +1,46 @@
+{
+  "slug": "architect",
+  "attempt": 2,
+  "scores": {
+    "OFI": 9,
+    "HD": 10,
+    "DBC": 9,
+    "NRC": 9,
+    "RWR": 9,
+    "MT": 9,
+    "OEA": 9
+  },
+  "weighted": {
+    "OFI": 18.0,
+    "HD": 18.0,
+    "DBC": 14.4,
+    "NRC": 13.5,
+    "RWR": 11.7,
+    "MT": 9.0,
+    "OEA": 7.2
+  },
+  "holds": [],
+  "veto": null,
+  "composite": 91.8,
+  "decision": "admit",
+  "rationale": "After upgrade: intake+HOLD+cut-first+refuse+output-check+OEA; domain preserved. before_composite=53.6",
+  "prior": {
+    "attempt": 1,
+    "scores": {
+      "OFI": 5,
+      "HD": 4,
+      "DBC": 6,
+      "NRC": 5,
+      "RWR": 7,
+      "MT": 7,
+      "OEA": 4
+    },
+    "holds": [],
+    "composite": 53.6,
+    "decision": "pipeline"
+  },
+  "stopgate": "PRIME",
+  "instrument": "SCORING.md / axi-m-skill-alignment",
+  "date": "2026-09-15",
+  "source": "skills/architect/SKILL.md"
+}
